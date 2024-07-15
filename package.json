@@ -1,0 +1,46 @@
+{
+  "name": "siwe-backend",
+  "version": "1.0.0",
+  "description": "Siwe-auth application backend used sign in with ethereum package.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "SET NODE_ENV=production && node build/server.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q build/server.js\"",
+    "compile": "ts-node src/server.ts",
+    "swagger": "node ./swagger.js"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/express-session": "^1.18.0",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/morgan": "^1.9.4",
+    "@types/node": "^20.14.9",
+    "@types/swagger-ui-express": "^4.1.3",
+    "@types/yamljs": "^0.2.31",
+    "concurrently": "^8.2.0",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alchemy-sdk": "^3.3.1",
+    "axios": "^1.7.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "siwe": "^2.3.2",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.1",
+    "viem": "^2.17.3",
+    "winston": "^3.13.0"
+  }
+}
