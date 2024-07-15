@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx tsc",
-    "start": "SET NODE_ENV=production && node build/server.js",
+    "start": "node build/server.js",
     "dev": "concurrently \"npx tsc --watch\" \"nodemon -q build/server.js\"",
     "compile": "ts-node src/server.ts",
     "swagger": "node ./swagger.js"
